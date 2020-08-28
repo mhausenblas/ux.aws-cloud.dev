@@ -1,10 +1,49 @@
-site_name: Test docs
-site_description: 'A docs test'
+site_name: AWS UX
+site_description: 'AWS services usability and UX'
 site_author: 'Michael Hausenblas'
-docs_dir: docs/
-repo_name: 'mhausenblas/actions-sandbox'
-repo_url: 'https://github.com/mhausenblas/actions-sandbox'
+docs_dir: 'docs'
+repo_name: 'mhausenblas/ux.aws-cloud.dev'
+repo_url: 'https://github.com/mhausenblas/ux.aws-cloud.dev'
+copyright: 'Copyright &copy; Amazon 2020'
 nav:
-    - Home: index.md
+- Home: index.md
+- Resources:
+  - Overview: resources/index.md
+  - Fundamental: resources/fundamental.md
+  - Containers: resources/containers.md
+  - Networking: resources/networking.md
+  - Security: resources/security.md
+  - Data: resources/data.md
+- Recipes:
+  - Overview: recipes/index.md
+  - recipes/tag-it-up.md
+  - recipes/cross-account-ops.md
 theme:
-  name: 'material'
+  palette:
+    scheme: preference
+    primary: teal
+    accent: amber
+  name: material
+  features:
+  - tabs
+  - instant
+  icon:
+    logo: 'octicons/people-24'
+    repo: 'fontawesome/brands/github'
+  font:
+    text: 'Lato'
+    code: 'PT Mono'
+  highlightjs: true
+  hljs_languages:
+      - yaml
+      - json
+      - bash
+markdown_extensions:
+- toc:
+    # slugify: pymdownx.slugs.uslugify
+    permalink: true
+- admonition
+- codehilite:
+    linenums: true
+plugins:
+- git-revision-date
