@@ -45,5 +45,5 @@ markdown_extensions:
 - admonition
 - codehilite:
     linenums: true
-plugins:
-- git-revision-date
+# plugins:
+# - git-revision-date
