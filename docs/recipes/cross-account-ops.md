@@ -11,14 +11,12 @@ The question is now how and where are cross-account operations supported?
 ## Solutions
 
 Cross-account operations apply in principle to all services. This doesn't mean
-that all services support it out of the box. It usually boils down to  
+that all services support it out of the box. It usually boils down to mastering
+IAM (esp. resource-based policies) and what a specific AWS service provides
+in terms of API support.
 
-For a general introduction into the topic you, check out Becky Weiss' re:Invent 2019
-talk on [permissions across accounts](https://youtu.be/Zvz-qYYhvMk?t=2852).
-
- 
-First off, you have to try and understand [how IAM roles differ from 
-resource-based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_compare-resource-policies.html):
+From a theoretical point of view you first want to understand what resource-based
+policies are and [how they differ from IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_compare-resource-policies.html):
 
 
 > Cross-account access with a resource-based policy has some advantages over
@@ -32,7 +30,8 @@ resource-based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_rol
 So, resource-based policies are attached to a resource while identity-based 
 policies are attached to an IAM user, group, or role, with the principal (*who*
 is allowed to do something) implicitly set by the entity the policy is attached
-to.
+to. For a general introduction into the topic check out Becky Weiss' excellent
+re:Invent 2019 talk on [permissions across accounts](https://youtu.be/Zvz-qYYhvMk?t=2852).
 
 Finally, do some hands-on with the tutorial on [delegating access across AWS 
 accounts using IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html) 
