@@ -64,7 +64,7 @@ to deal with all the resources tagged in the previous step:
 
 ![AWS resource group](../images/2020-08-28-screenshot-rg.png)
 
-Further reading:
+## Further reading
 
 - [Tagging Best Practices](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf)
 - [Automatically Enforcing AWS Resource Tagging Policies](https://www.pulumi.com/blog/automatically-enforcing-aws-resource-tagging-policies/)

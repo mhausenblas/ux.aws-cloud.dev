@@ -2,11 +2,9 @@
 
 ## Problem
 
-
 ## Solutions
 
-
-Further reading:
+## Further reading
 
 ## Conclusion
 
