@@ -18,6 +18,7 @@ nav:
   - Overview: recipes/index.md
   - recipes/tag-it-up.md
   - recipes/cross-account-ops.md
+- Contributing: contributing.md
 theme:
   palette:
     scheme: preference
